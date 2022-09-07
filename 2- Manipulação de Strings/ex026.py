@@ -1,0 +1,5 @@
+frase = str(input('Digite uma frase qualquer: ')).upper().strip()
+print('Quantas vezes aparece a letra A? {} vezes.'.format(frase.count('A')))
+print('Em que posição a letra A aparece primeiro? {}'.format(frase.find('A')))
+print('E quando aparece pela última vez? {}'.format(frase.rfind('A')))
+print('Concluído em 09/03/2022')
