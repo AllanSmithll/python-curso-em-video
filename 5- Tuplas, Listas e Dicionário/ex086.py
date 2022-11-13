@@ -2,7 +2,7 @@
 # Crie um programa que declare uma matriz de dimensão 3×3 e preencha com valores lidos pelo teclado. No final, mostre a matriz na tela, com a formatação correta.
 
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]] # Matriz 3X3
-lin = 3 # Sendo assim 3 linhas e 3 colunas
+lin = 3 # Sendo assim, 3 linhas e 3 colunas
 col = 3
 
 for i in range(lin): # Linha começa em 0 e parte para o for j
