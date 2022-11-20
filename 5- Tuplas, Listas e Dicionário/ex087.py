@@ -9,7 +9,7 @@ C) O maior maior da segunda coluna
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]] # Matriz 3X3
 lin = 3
 col = 3
-Spares = Scolunas = MaiorSegLinha = 0
+Spares = Scoluna3 = MaiorSegLinha = 0
 
 for i in range(lin):
     for j in range(col):
@@ -24,12 +24,24 @@ for i in range(lin):
             Spares += matriz[i][j]
         else: pass
 
-        if matriz[i][2]:
-            Scolunas += matriz[i][2]
-        else: continue
+        if i != None:  # Soma da terceira coluna, com i diferente de None
+            if j == 2:  # Terceira por causa deste if
+                Scoluna3 += matriz[i][j]
+        else: pass
+
+        if i == 1:
+            if j == 0:
+                MaiorSegLinha = matriz[i][j]
+            elif j == 1 and MaiorSegLinha < matriz[1][j]:
+                MaiorSegLinha = matriz[i][j]
+            elif j == 2 and MaiorSegLinha < matriz[1][j]:
+                MaiorSegLinha = matriz[i][j]
+
 
 
     print()
+print("-="*30)
 
 print(Spares)
-print(Scolunas)
+print(Scoluna3)
+print(MaiorSegLinha)
