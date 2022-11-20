@@ -36,6 +36,8 @@ for i in range(lin):
                 MaiorSegLinha = matriz[i][j]
             elif j == 2 and MaiorSegLinha < matriz[1][j]:
                 MaiorSegLinha = matriz[i][j]
+        else:
+            continue
 
 
 
