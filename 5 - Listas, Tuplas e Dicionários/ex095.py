@@ -1,16 +1,16 @@
 # 26/11/2022
 '''
-Crie um programa que gerencie o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai ler a quantidade de gols feitos em cada partida. No final, tudo isso será guardado em um dicionário, incluindo o total de gols feitos durante o campeonato.
-
-OBS: acrescentarei a propriedade "média de gols por partida, para fciar próximo da realidade."
+Aprimore o desafio 93 para que ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
 '''
 
 jogador = dict() # Crio um dicionário
 
-jogador = {
+jogador = [{
+    "id": 1,
     "nome": input("Nome: "),       # Pergunto o nome do jogador
     "partidas_jogadas": int(input("Partidas Jogadas: "))       # Quantas partidas foram jogadas pelo tal jogador
-}
+},
+]
 
 MAX_PARTIDAS = 38         # Máximo de partidas do campeonato
 if jogador["partidas_jogadas"] < MAX_PARTIDAS:          # Se o jogador joga menos de 38 partidas do campeonato
