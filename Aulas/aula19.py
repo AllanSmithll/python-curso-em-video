@@ -30,4 +30,4 @@ print(filme.keys())  # Quando quero apenas as keys. Por exemplo: titulo, ano e d
 print(filme.items())  # Quando quero todos os items. Todos os valores com suas keys.
 
 for key, value in filme.items():
-    print(f'\n O {key} é {value}.')
+    print(f'\nO {key} é {value}.')
