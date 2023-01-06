@@ -1,5 +1,6 @@
-import winsound
-winsound.init()
-winsound.mixer.music.load('ex021.mp3')
-winsound.mixer.music.play()
-winsound.event.wait()
+# Atualizando em 05/01/2023
+import pygame
+pygame.init()
+pygame.mixer.music.load('ex021.mp3')
+pygame.mixer.music.play()
+pygame.event.wait()
