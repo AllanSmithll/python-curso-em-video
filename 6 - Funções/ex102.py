@@ -1,4 +1,4 @@
-# 05/01/2023
+# 07/01/2023
 '''Exercício Python 102: Crie um programa que tenha uma função fatorial() que receba dois parâmetros: o primeiro que indique o número a calcular e outro chamado show, que será um valor lógico (opcional) indicando se será mostrado ou não na tela o processo de cálculo do fatorial.'''
 
 def fatorial(num:int, show:bool) -> int:
@@ -28,12 +28,17 @@ def fatorial(num:int, show:bool) -> int:
 #--------------------#
 # PROGRAMA PRINCIPAL #
 #--------------------#
-numero = int(input("Número para fatorar: "))
-ver_calculo_fatorial = input("Ver cálculo fatorial acontecendo (sim ou não)? ").upper().strip()
+while True:
+    try:
+        numero = int(input("Número para fatorar: "))
+    except ValueError:
+        print("Digite um número inteiro válido!")
+        numero = int(input("Digite um inteiro válido: "))
+    ver_calculo_fatorial = input("Ver cálculo fatorial acontecendo (sim ou não)? ").upper().strip()
 
-if ver_calculo_fatorial == "SIM":
-    ver_calculo_fatorial = True
-else:
-    ver_calculo_fatorial = False
+    if ver_calculo_fatorial == "SIM":
+        ver_calculo_fatorial = True
+    else:
+        ver_calculo_fatorial = False
 
-print("O fatorial de", numero, "é igual a", fatorial(numero, ver_calculo_fatorial))
+    print("O fatorial de", numero, "é igual a", fatorial(numero, ver_calculo_fatorial))
