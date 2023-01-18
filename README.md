@@ -1,4 +1,4 @@
-# Course de Python
+# Python's Course
 
 Teacher: Gustavo Guanabara  
 Site: <https://www.cursoemvideo.com>  
